@@ -1,4 +1,4 @@
-// An example solution for the exercise: [AED001] Forty-Two
+
 
 #include <iostream>
 
@@ -20,3 +20,4 @@ int main() {
   
   return 0;
 }
+
