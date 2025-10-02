@@ -5,7 +5,7 @@ using namespace std;
 bool real_sqrt(int a) {
   if (a < 0)
     return false;
-  int root = static_cast<int>(std::sqrt(a));
+  int root = static_cast<int>(sqrt(a));
   return root * root == a;
 }
 
