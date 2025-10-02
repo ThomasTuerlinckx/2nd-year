@@ -9,4 +9,23 @@ bool real_sqrt(int a) {
   return root * root == a;
 }
 
-int main() { return 0; }
+int main() {
+  int num;
+  cin >> num;
+  int x, y;
+  if (real_sqrt(num)) {
+    if (num % 2 != 0) {
+      x = sqrt(num) - 1;
+      x = x / 2;
+      y = x;
+
+    } else {
+      y = sqrt(num) / 2;
+      y = -y;
+      x = y + 1;
+    }
+  }
+
+  cout << "(" << x << "," << y << ")";
+  return 0;
+}
