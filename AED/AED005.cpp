@@ -28,17 +28,36 @@ int YSquares(int num) {
   }
 }
 
+int diagonalCalc(int a) { // A MUST BE THE UPPER SQUARE
+  int returnable;
+  cout << "YSquare" << " " << YSquares(a) << " ";
+  if (isPair(a)) {
+    returnable = a - (2 * YSquares(a));
+    returnable += 1;
+  } else if (!isPair(a)) {
+    returnable = a + (2 * YSquares(a));
+  }
+  return returnable;
+}
+
+int Xdiagonal(int a) { return -YSquares(a); }
+
+int Ydiagonal(int(a)) {
+  int y;
+  return YSquares(a);
+}
+
 int main() {
   int num;
   cin >> num;
   int x, y;
   if (real_sqrt(num)) {
-    if (isPair(num)) {
+    if (!isPair(num)) {
       x = sqrt(num) - 1;
       x = x / 2;
       y = x;
 
-    } else {
+    } else if (isPair(num)) {
       y = sqrt(num) / 2;
       y = -y;
       x = y + 1;
@@ -50,30 +69,28 @@ int main() {
     int upper = num;
     bool up = false;
     bool down = false;
-    while (up == false or down == false) {
-      if (real_sqrt(lower) != false) {
-        lower--;
-      } else
-        down = true;
-
+    while (true) {
       if (real_sqrt(upper)) {
-        upper--;
+        break;
       } else
-        up = true;
+        upper++;
+    }
+    while (true) {
+      if (real_sqrt(lower)) {
+        break;
+      } else
+        lower--;
     }
 
-    int Xmiddle, Ymiddle;
-    if (isPair(upper)) {
-      int Yupper = YSquares(upper);
-      Xmiddle = -Yupper;
-      Ymiddle = Yupper;
+    int Xmiddle, Ymiddle, middle, count = 0;
+    middle = diagonalCalc(upper);
+    Xmiddle = Xdiagonal(upper);
+    Ymiddle = Ydiagonal(upper);
 
-      if (!isPair(upper)) {
-        int Yupper = YSquares(upper);
-        Xmiddle = -Yupper;
-        Ymiddle = Yupper;
-      }
-    }
+    x = 1;
+    y = 1;
+
+    cout << lower << " " << upper << " " << middle << " " << count << " ";
   }
 
   cout << "(" << x << "," << y << ")";
