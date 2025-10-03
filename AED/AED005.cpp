@@ -30,10 +30,10 @@ int YSquares(int num) {
 
 int diagonalCalc(int a) { // A MUST BE THE UPPER SQUARE
   int returnable;
-  cout << "YSquare" << " " << YSquares(a) << " ";
+
   if (isPair(a)) {
     returnable = a - (2 * YSquares(a));
-    returnable += 1;
+    returnable -= 1;
   } else if (!isPair(a)) {
     returnable = a + (2 * YSquares(a));
   }
@@ -82,15 +82,50 @@ int main() {
         lower--;
     }
 
-    int Xmiddle, Ymiddle, middle, count = 0;
+    int Xmiddle, Ymiddle, middle;
+    int count = 0;
     middle = diagonalCalc(upper);
     Xmiddle = Xdiagonal(upper);
     Ymiddle = Ydiagonal(upper);
+    bool upperPair = isPair(upper);
+    int tester = 0;
+    if (num >= middle) {
+      tester = middle;
+      if (upperPair) {
+        x = Xmiddle;
+        y = Ymiddle;
+        while (tester != num) {
+          tester++;
+          x--;
+        }
+      }
+    } else if (!upperPair) {
+      x = Xmiddle;
+      y = Ymiddle;
+      while (tester != num) {
+        tester++;
+        x++;
+      }
+    }
 
-    x = 1;
-    y = 1;
-
-    cout << lower << " " << upper << " " << middle << " " << count << " ";
+    if (num <= middle) {
+      tester = lower;
+      if (upperPair) {
+        x = Xmiddle;
+        y = Ymiddle;
+        while (tester != num) {
+          tester++;
+          x--;
+        }
+      }
+    } else if (!upperPair) {
+      x = Xmiddle;
+      y = Ymiddle;
+      while (tester != num) {
+        tester++;
+        x++;
+      }
+    }
   }
 
   cout << "(" << x << "," << y << ")";
