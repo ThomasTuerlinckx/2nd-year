@@ -1,0 +1,17 @@
+Exercicio 1:
+
+
+  team(teamID*, name, country, current-points)
+  car (carID*, weight, power, maxSpeed)
+  Driver(DriverID*, name, addressm birthdate, nationality, current-points, carID->Car)
+  Race(RaceID*, name, date, numLaps, circuitsID*->Circuit)
+  Circuit(CircuitID*, name, location, country, length)
+  Participation(DriverID*->DRiver, RaceID, startPosition,finishPosition)
+
+
+Exercicio 2
+  Clinte(clientId*, nome, morada)
+  Proprietario(:)
+  
+
+
