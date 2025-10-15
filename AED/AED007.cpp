@@ -1,37 +1,45 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
-    int N, S, I;
-    cin >> N >> S >> I;
+  int N, S, I;
+  cin >> N >> S >> I;
 
-    string chests;
-    cin >> chests;
+  string chests;
+  cin >> chests;
 
-    int pos = S - 1;    
-    int treasures = 0;
+  int pos = S - 1;
+  int left = pos;
+  int right = pos;
 
-    if (chests[pos] == 'T') {
-        treasures++;
-        chests[pos] = 'E'; 
-    }
+  for (int i = 0; i < I; i++) {
+    char D;
+    int K;
+    cin >> D >> K;
 
-    for (int i = 0; i < I; i++) {
-        char D;
-        int K;
-        cin >> D >> K;
+    if (D == 'R')
+      pos += K;
+    else
+      pos -= K;
 
-        int step = (D == 'R') ? 1 : -1;
-        for (int j = 0; j < K; j++) {
-            pos += step;
-            if (chests[pos] == 'T') {
-                treasures++;
-                chests[pos] = 'E'; 
-            }
-        }
-    }
+    if (pos < 0)
+      pos = 0;
+    if (pos >= N)
+      pos = N - 1;
 
-    cout << treasures << "\n";
-    return 0;
+    if (pos < left)
+      left = pos;
+    if (pos > right)
+      right = pos;
+  }
+
+  int treasures = 0;
+  for (int i = left; i <= right; i++) {
+    if (chests[i] == 'T')
+      treasures++;
+  }
+
+  cout << treasures << "\n";
+  return 0;
 }
-
