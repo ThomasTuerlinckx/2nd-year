@@ -12,9 +12,8 @@
 #include <cassert>
 #include <iostream>
 #include <sstream>
+#include <stdexcept>
 #include <string>
-
-// -------------------------------------------------------------
 // Simple Node<T> class with a link to the next node
 // -------------------------------------------------------------
 
@@ -171,14 +170,53 @@ public:
   }
 
   void remove(int pos) {
+    if (first == nullptr || pos < 0 || pos >= length)
+      return;
+    if (pos == 0) {
+      Node<T> *victim = first;
+      first = first->getNext();
+      delete victim;
+      length--;
+      return;
+    }
     Node<T> *cur = first;
-    for (int i = 0; i < pos; i++) {
+    for (int i = 0; i < pos - 1 && cur != nullptr; i++) {
       cur = cur->getNext();
     }
+    if (cur == nullptr || cur->getNext() == nullptr)
+      return;
     Node<T> *victim = cur->getNext();
     cur->setNext(victim->getNext());
     delete victim;
+    length--;
+  }
+
+  void insert(int pos, const T &v) {
+    if (pos < 0 || pos > length) {
+      return;
+    }
+    if (pos == 0) {
+      return addFirst(v);
+      return;
+    }
+
+    Node<T> *newNode = new Node<T>(v, nullptr);
+
+    Node<T> *cur = first;
+    for (int i = 0; i < pos - 1; ++i) {
+      if (cur == nullptr) {
+        break;
+      }
+      cur = cur->getNext();
+    }
+    if (cur == nullptr)
+      return;
+    newNode->setNext(cur->getNext());
+    cur->setNext(newNode);
+
+    length++;
   }
 };
 
 #endif
+// -------------------------------------------------------------
