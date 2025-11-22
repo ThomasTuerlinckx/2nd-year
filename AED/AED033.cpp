@@ -36,7 +36,6 @@ int main() {
 
   while (children.size() > 1) {
     for (int i = 0; i < count - 1; i++) {
-      it = children.begin();
       it++;
       if (it == children.end()) {
         it = children.begin();
