@@ -216,11 +216,36 @@ public:
   bool strict(Node *n) {
     if (n == nullptr)
       return true;
-    if (n->left == nullptr and n->right != nullptr)
+    if ((n->left == nullptr && n->right != nullptr) ||
+        (n->left != nullptr && n->right == nullptr))
       return false;
-    if (n->left != nullptr and n->right == nullptr)
-      return false;
-    return (strict(n->left) and strict(n->right));
+    return strict(n->left) && strict(n->right);
+  }
+  bool strict() { return strict(root); }
+
+  T &path(std::string s) {
+    Node *cur = root;
+
+    if (s == "_")
+      return cur->value;
+    for (char c : s) {
+      if (c == 'L')
+        cur = cur->left;
+      else if (c == 'R')
+        cur = cur->right;
+    }
+
+    return cur->value;
+  }
+  int nodesLevel(int k) { return nodesLevel(root, 0, k); }
+
+  int nodesLevel(Node *n, int level, int k) {
+    if (n == nullptr)
+      return 0;
+    if (level == k)
+      return 1;
+    return nodesLevel(n->left, level + 1, k) +
+           nodesLevel(n->right, level + 1, k);
   }
 };
 

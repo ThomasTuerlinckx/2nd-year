@@ -1,0 +1,111 @@
+select  round(avg(a.total),2) as avg_coalition_parties
+from (select coligacoes.municipality_code, coligacoes.shortname, count(1) as total
+FROM(select distinct municipality_code,shortname 
+     from coalition) coligacoes
+inner join (select distinct municipality_code, coalition_shortname, order_number, party_id
+		    from coalition_member ) relacoesPartidos on relacoesPartidos.municipality_code = coligacoes.municipality_code and relacoesPartidos.coalition_shortname = coligacoes.shortname
+inner join party partido on partido.id = relacoesPartidos.party_id
+group by coligacoes.municipality_code, coligacoes.shortname) a
+
+
+select * from (
+select c.name
+from coalition c
+UNION
+select i.name
+from independent i
+) a
+where lower(a.name) like "%mudar%" or upper(a.name) like "%MUDANÇA%" 
+order by a.name asc
+
+
+-- Select the names of the coalitions that have 
+--the largest number of parties. Order the result alphabetically by coalition name.
+
+
+
+
+
+
+SELECT  c.name
+FROM coalition c
+JOIN coalition_member cm ON cm.coalition_shortname = c.shortname
+GROUP BY c.name, c.shortname
+HAVING COUNT(DISTINCT cm.party_id) = (
+  SELECT MAX(cnt)
+  FROM ( 
+    SELECT COUNT(DISTINCT cm1.party_id) AS cnt
+    FROM coalition c1
+    JOIN coalition_member cm1 ON cm1.coalition_shortname = c1.shortname
+    GROUP BY c1.shortname
+  ) x
+)
+order by c.name asc
+
+
+
+select count(help) as total
+from(
+
+
+SELECT  c.name as help
+FROM coalition c
+JOIN coalition_member cm ON cm.coalition_shortname = c.shortname
+GROUP BY c.name, c.shortname
+HAVING COUNT(DISTINCT cm.party_id) = 3
+)
+
+
+
+--Considering parties, coalitions, and independent groups, list the shortnames and the 
+--number of votes for the municipality named ‘PORTO’. 
+--Order the results in descending order by the number of votes.
+
+
+select p.shortname, pv.votes
+from party p
+join party_votes pv on pv.party_id=p.id
+join municipality m on m.code = pv.municipality_code
+where m.name = 'PORTO'
+
+
+union
+
+select c.shortname, c.votes
+from coalition c
+join municipality m on m.code = c.municipality_code
+where m.name = 'PORTO'
+
+
+union
+
+select i.shortname, i.votes
+from independent i
+join municipality m on m.code = i.municipality_code
+where m.name = 'PORTO'
+order by votes desc
+
+
+
+
+
+select count(help) as total
+from(
+
+
+SELECT  c.name as help
+FROM coalition c
+JOIN coalition_member cm ON cm.coalition_shortname = c.shortname
+GROUP BY c.name, c.shortname
+HAVING COUNT(DISTINCT cm.party_id) = 3
+)
+
+
+
+
+
+
+
+
+
+

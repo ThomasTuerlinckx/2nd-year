@@ -1,5 +1,5 @@
 PRAGMA foreign_keys=ON;
-
+BEGIN TRANSACTION;
 CREATE TABLE district (
   id SMALLINT NOT NULL,
   name VARCHAR(64) NOT NULL,

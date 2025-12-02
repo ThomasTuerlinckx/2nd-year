@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="Autarquicas.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="3592"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="0"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="coalition" custom_title="0" dock_id="2" table="4,9:maincoalition"/><dock_state state="000000ff00000000fd00000001000000020000000000000000fc0100000002fb000000160064006f0063006b00420072006f00770073006500310100000000ffffffff0000000000000000fb000000160064006f0063006b00420072006f00770073006500320100000000ffffffff0000010e00ffffff000000000000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="ddl_aut2021.sql" filename="/home/thomas/Desktop/2nd year/BD/ddl_aut2021.sql">-- Reference to file &quot;/home/thomas/Desktop/2nd year/BD/ddl_aut2021.sql&quot; (not supported by this version) --</sql><sql name="SQL 2*">-- List the names of the municipalities where the winner was an independent (not a party or a party coalition). 
+-- Order the result alphabetically by municipality name.
+
+with MaxResult As(
+
+select max(votes) as coolVote, code
+from(
+select m.code, pv.votes
+from party p
+join party_votes pv on pv.party_id=p.id
+join municipality m on m.code = pv.municipality_code
+
+
+union
+
+select m.code, c.votes
+from coalition c
+join municipality m on m.code = c.municipality_code
+
+
+
+union
+
+select m.code, i.votes
+from independent i
+join municipality m on m.code = i.municipality_code
+
+)x
+group by code
+
+)
+select m1.name
+from municipality m1
+join independent i1 on i1.municipality_code = m1.code
+join MaxResult mx on m1.code = mx.code
+where i1.votes = mx.coolVote
+order by m1.name asc
+
+
+
+
+
+WITH coalition_pairs AS (
+    SELECT
+        cm.coalition_shortname,
+        MIN(cm.party_id) AS party_a,
+        MAX(cm.party_id) AS party_b
+    FROM coalition_member cm
+    GROUP BY cm.coalition_shortname
+    HAVING COUNT(DISTINCT cm.party_id) = 2
+),
+symmetrical AS (
+    SELECT DISTINCT
+        CASE 
+            WHEN c1.coalition_shortname &lt;= c2.coalition_shortname 
+                THEN c1.coalition_shortname
+            ELSE c2.coalition_shortname
+        END AS shortname
+    FROM coalition_pairs c1
+    JOIN coalition_pairs c2
+      ON c1.party_a = c2.party_a
+     AND c1.party_b = c2.party_b
+     AND c1.coalition_shortname &lt;&gt; c2.coalition_shortname
+)
+SELECT shortname
+FROM symmetrical
+ORDER BY shortname;
+
+
+
+select p.name, c.shortname
+from party p
+join coalition_member cm on cm.party_id = p.id
+join coalition c on c.shortname = cm.coalition_shortname
+group by c.shortname
+order by p.name asc;
+
+
+
+--For each party, list the number of municipalities where it ran and obtained 
+--more than 100 votes (considering party lists and coalitions). 
+--Name this attribute total_municipalities. Return only parties with total_municipalities 
+--greater than 10.
+--Order the result in descending order of total_municipalities.
+WITH all_muns  AS (
+    SELECT 
+        pv.party_id AS PartyId,
+        pv.municipality_code AS MunCode
+    FROM party_votes pv
+    WHERE pv.votes &gt; 100
+
+	union 
+    SELECT 
+        cm.party_id AS PartyId,
+        c.municipality_code AS MunCode
+    FROM coalition c
+    JOIN coalition_member cm
+      ON cm.municipality_code   = c.municipality_code
+     AND cm.coalition_shortname = c.shortname
+    WHERE c.votes &gt; 100
+
+-- all_muns AS (
+--     SELECT * FROM list_muns
+--     UNION              
+--     SELECT * FROM coal_muns
+)
+SELECT
+    p.shortname,
+    COUNT(*) AS total_municipalities
+FROM all_muns a
+JOIN party p ON p.id = a.PartyId
+GROUP BY p.shortname
+HAVING COUNT(*) &gt; 10
+ORDER BY total_municipalities DESC;
+
+
+
+
+
+
+
+
+with Help as(
+SELECT p.id AS PartyId, m.code AS MunCode
+    FROM municipality m
+    JOIN party_votes pv ON pv.municipality_code = m.code
+    JOIN party p ON p.id = pv.party_id
+    WHERE pv.votes &gt; 100
+
+    UNION
+
+    SELECT 
+        cm.party_id AS PartyId,
+        c.municipality_code AS MunCode
+    FROM coalition c
+    JOIN coalition_member cm
+      ON cm.municipality_code   = c.municipality_code
+     AND cm.coalition_shortname = c.shortname
+    WHERE c.votes &gt; 100
+)
+select  p.shortname, count(*) as total_municipalities
+from Help
+join municipality m on m.code = Muncode
+join party p on p.id = PartyId
+group by p.shortname
+having count(*)&gt;10
+order by total_municipalities DESC
+
+
+</sql><current_tab id="1"/></tab_sql></sqlb_project>

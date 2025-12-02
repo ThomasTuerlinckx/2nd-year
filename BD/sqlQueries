@@ -1,0 +1,71 @@
+-- List the names of the parties that were members of the coalition named ‘LAGOS COM FUTURO’ in the municipality named ‘LAGOS’, ordered by their order number (ascending).
+
+select DISTINCT p.name
+from party p 
+join coalition_member cm on p.id= cm.party_id
+join coalition c on  cm.coalition_shortname = c.shortname
+join municipality m on m.code = c.municipality_code
+where m.name = 'LAGOS'
+order by cm.order_number 
+
+
+
+
+WITH TotalAbs As (
+SELECT d.name as districtName,m.registered_voters as total_registered_voters, sum( m.registered_voters+ m.valid_votes +m.blank_votes+m.null_votes) as total_voters,  sum( m.registered_voters- m.valid_votes - m.blank_votes- m.null_votes) as abstentioners 
+from district d
+inner JOIN municipality m on d.id = m.district
+GROUP by d.name
+)
+
+
+select districtName, total_registered_voters, total_voters ,round((abstentioners/total_voters),4)
+from TotalAbs
+
+WITH TotalAbs As (
+SELECT d.name as districtName,sum(m.registered_voters )as total_registered_voters, sum( m.valid_votes + m.blank_votes + m.null_votes) as total_voters,  sum( m.registered_voters- m.valid_votes - m.blank_votes- m.null_votes) as abstentioners 
+from district d
+inner JOIN municipality m on d.id = m.district
+GROUP by d.name
+)
+select districtName, total_registered_voters, total_voters ,round((1.0*abstentioners/total_registered_voters))*100 as abstention_percentage
+from TotalAbs
+
+
+
+--List the names of the parties that did not participate in any coalition. Order the result alphabetically by party name.
+
+SELECT p.name
+FROM party p
+LEFT JOIN coalition_member cm ON cm.party_id = p.id
+GROUP BY p.id
+HAVING COUNT(cm.party_id) < 1
+order by p.name asc
+
+
+
+
+
+select  round(avg(a.total),2) as avg_coalition_parties
+from (select coligacoes.municipality_code, coligacoes.shortname, count(1) as total
+
+	FROM(select distinct municipality_code,shortname 
+		from coalition) coligacoes
+		inner join (select distinct municipality_code, coalition_shortname, order_number, party_id
+			from coalition_member ) relacoesPartidos on relacoesPartidos.municipality_code = coligacoes.municipality_code and relacoesPartidos.coalition_shortname = coligacoes.shortname
+inner join party partido on partido.id = relacoesPartidos.party_id
+group by coligacoes.municipality_code, coligacoes.shortname) a
+
+
+
+
+--Select the names of the coalitions that have the largest number of parties. Order the result alphabetically by coalition name.
+
+
+
+select *
+from coalition c
+join coalition_member cm on cm.coalition_shortname = c.shortname
+join party p on p.id = cm.party_id
+group by party
+
