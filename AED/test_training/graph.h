@@ -23,7 +23,10 @@ class Graph {
 
   struct Node {
     std::list<Edge> adj; // The list of outgoing edges (to adjacent nodes)
-    bool visited;        // Has the node been visited in a graph traversal?
+    bool visited;
+    int dist; // Has the node been visited in a graph traversal?
+    bool passed;
+    int previous = -1;
   };
 
   int n;                   // Graph size (vertices are numbered from 1 to n)
@@ -94,10 +97,9 @@ public:
     std::queue<int> q; // queue of unvisited nodes
     q.push(v);
     nodes[v].visited = true;
-    while (!q.empty()) { // while there are still unvisited nodes
+    while (!q.empty()) { // while there are still unv;
       int u = q.front();
       q.pop();
-      std::cout << u << " "; // show node order
       for (auto e : nodes[u].adj) {
         int w = e.dest;
         if (!nodes[w].visited) {
@@ -114,118 +116,101 @@ public:
   // TODO: put the functions you need to implement below this
   // ---------------------------------------------------------
 
-  int outDegree(int v) { return nodes[v].adj.size(); }
-
-  int weightedOutDegree(int v) {
-    int sum = 0;
-    for (auto e : nodes[v].adj) {
-      sum += e.weight;
-    }
-    return sum;
-  }
-
-  void dfs2(int v) {
-    // show node order
-    nodes[v].visited = true;
-    for (auto e : nodes[v].adj) {
-      int w = e.dest;
-      if (!nodes[w].visited)
-        dfs2(w);
-    }
-  }
-
-  int nrConnectedComponents() {
-    int counter = 0;
-    for (int v = 1; v <= n; v++) {
-      nodes[v].visited = false;
-    }
-    for (int v = 1; v <= n; v++) {
-      if (!nodes[v].visited) {
-        counter++;
-        dfs2(v);
-      };
-    }
-    return counter;
-  }
-  int dfs3(int v) {
-    nodes[v].visited = true;
-    int size = 1;
-
-    for (auto e : nodes[v].adj) {
-      int w = e.dest;
-
-      if (!nodes[w].visited) {
-        size += dfs3(w);
-      }
-    }
-
-    return size;
-  }
-  /*
-    int largestComponent() {
-      int maxSize = 0;
-
-      for (int v = 1; v <= n; v++) {
-        nodes[v].visited = false;
-      }
-
-      for (int v = 1; v <= n; v++) {
-        if (!nodes[v].visited) {
-          int;
-          if (compSize > maxSize)
-            maxSize = compSize;
-        }
-      }
-
-      return maxSize;
-    }*/
-
-  void dfsOrder(int v, std::vector<bool> &visited, std::vector<int> &order) {
-    visited[v] = true;
-    for (auto e : nodes[v].adj) {
-      if (!visited[e.dest])
-        dfsOrder(e.dest, visited, order);
-    }
-    order.push_back(v);
-  }
-
-  void dfsSCC(int v, std::vector<bool> &visited,
-              const std::vector<std::list<int>> &revAdj) {
-    visited[v] = true;
-    for (int w : revAdj[v]) {
-      if (!visited[w])
-        dfsSCC(w, visited, revAdj);
-    }
-  }
-
-  int countSCCs() {
-    std::vector<bool> visited(n + 1, false);
-    std::vector<int> order;
+  int distance(int a, int b) {
 
     for (int i = 1; i <= n; i++) {
-      if (!visited[i])
-        dfsOrder(i, visited, order);
+      nodes[i].visited = false;
+      nodes[i].dist = 0;
     }
 
-    std::vector<std::list<int>> revAdj(n + 1);
-    for (int u = 1; u <= n; u++) {
+    std::queue<int> q;
+    q.push(a);
+    nodes[a].visited = true;
+    while (!q.empty()) { // while there are still unvisited nodes
+      int u = q.front();
+      q.pop();
+      if (u == b) {
+        return nodes[u].dist;
+      }
       for (auto e : nodes[u].adj) {
-        revAdj[e.dest].push_back(u);
+        int w = e.dest;
+        if (!nodes[w].visited) {
+          q.push(w);
+          nodes[w].dist = nodes[u].dist + 1;
+          nodes[w].visited = true;
+        }
       }
     }
+    return -1;
+  }
 
-    std::fill(visited.begin(), visited.end(), false);
-    int sccCount = 0;
+  int diameter() {
+    int diam = 0;
 
-    for (int i = n - 1; i >= 0; i--) {
-      int v = order[i];
-      if (!visited[v]) {
-        dfsSCC(v, visited, revAdj);
-        sccCount++;
+    for (int i = 1; i <= n; i++) {
+      for (int j = 1; j <= n; j++) {
+        if (i == j)
+          continue;
+        int d = distance(i, j);
+        if (d == -1) {
+          return -1;
+        }
+        if (d > diam)
+          diam = d;
       }
     }
+    return diam;
+  }
+  void PathBfs(int a, int b) {
 
-    return sccCount;
+    for (int i = 1; i <= n; i++) {
+      nodes[i].adj.sort(
+          [](const Edge &x, const Edge &y) { return x.dest < y.dest; });
+    }
+
+    for (int i = 1; i <= n; i++) {
+      nodes[i].visited = false;
+      nodes[i].previous = -1;
+    }
+
+    std::queue<int> q;
+    q.push(a);
+    nodes[a].visited = true;
+    nodes[a].dist = 0;
+
+    while (!q.empty()) {
+      int curr = q.front();
+      q.pop();
+
+      for (auto e : nodes[curr].adj) {
+        int next = e.dest;
+        if (!nodes[next].visited) {
+          nodes[next].visited = true;
+          nodes[next].dist = nodes[curr].dist + 1;
+          nodes[next].previous = curr;
+          q.push(next);
+        } else if (nodes[next].dist == nodes[curr].dist + 1) {
+          if (nodes[next].previous > curr) {
+            nodes[next].previous = curr;
+          }
+        }
+      }
+    }
+  }
+
+  std::list<int> shortestPath(int a, int b) {
+    std::list<int> l;
+    PathBfs(a, b);
+
+    if (!nodes[b].visited) {
+      return l;
+    }
+    for (int v = b; v != -1; v = nodes[v].previous) {
+      l.push_front(v);
+      if (v == a)
+        break;
+    }
+    return l;
   }
 };
 

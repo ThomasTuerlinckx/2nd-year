@@ -16,6 +16,7 @@
 #include <sstream>
 #include <stack>
 #include <string>
+#include <vector>
 
 template <class T> class BTree {
 private:
@@ -204,6 +205,8 @@ public:
   // ---------------------------------------------------------
   // TODO: put the functions you need to implement below this
   // ---------------------------------------------------------
+  //
+
   int numberLeafs() { return numberLeafs(root); }
 
   int numberLeafs(Node *n) {
@@ -239,7 +242,6 @@ public:
     return cur->value;
   }
   int nodesLevel(int k) { return nodesLevel(root, 0, k); }
-
   int nodesLevel(Node *n, int level, int k) {
     if (n == nullptr)
       return 0;
@@ -247,6 +249,140 @@ public:
       return 1;
     return nodesLevel(n->left, level + 1, k) +
            nodesLevel(n->right, level + 1, k);
+  }
+
+  int counterEven(Node *n) {
+    if (n == nullptr)
+      return 0;
+
+    if (n->left == nullptr && n->right == nullptr) {
+      if (n->value % 2 == 0) {
+        return 1;
+      }
+    }
+    if (n->value % 2 == 0) {
+      return 1 + counterEven(n->right) + counterEven(n->left);
+    }
+    return counterEven(n->right) + counterEven(n->left);
+  }
+
+  int countEven() {
+    Node *n = root;
+    return counterEven(n);
+  }
+
+  /*
+    int nodesSumLevel(Node *n, int level, int k) {
+      if (n == nullptr)
+        return 0;
+      if (level == k)
+        return n->value;
+    */
+
+  int max(int a, int b) {
+    if (a >= b) {
+      return a;
+    } else
+      return b;
+  }
+
+  struct bloody {
+    int maxi;
+    std::string pathy;
+  };
+
+  bloody Helper(Node *n) {
+    if (n == nullptr) {
+      return {0, ""};
+    }
+
+    if (n->left == nullptr && n->right == nullptr) {
+      return {n->value, ""};
+    }
+
+    if (n->left == nullptr) {
+      bloody r = Helper(n->right);
+      return {n->value + r.maxi, "R" + r.pathy};
+    }
+
+    if (n->right == nullptr) {
+      bloody l = Helper(n->left);
+      return {n->value + l.maxi, "L" + l.pathy};
+    }
+
+    bloody r = Helper(n->right);
+    bloody l = Helper(n->left);
+
+    if (r.maxi >= l.maxi) {
+      return {n->value + r.maxi, "R" + r.pathy};
+    } else {
+      return {n->value + l.maxi, "L" + l.pathy};
+    }
+  }
+
+  std::string maxSum() {
+    bloody pain = Helper(root);
+
+    std::string a = pain.pathy;
+    return a;
+  }
+
+  void genLR(int n, std::string &cur, std::vector<std::string> &res) {
+    if ((int)cur.size() == n) {
+      res.push_back(cur);
+      return;
+    }
+
+    cur.push_back('L');
+    genLR(n, cur, res);
+    cur.back() = 'R';
+    genLR(n, cur, res);
+    cur.pop_back();
+  }
+
+  std::vector<std::string> genLRVector(int n) {
+    std::vector<std::string> res;
+    std::string cur;
+    genLR(n, cur, res);
+    return res;
+  }
+
+  std::string path2(const std::string &s) {
+    Node *cur = root;
+    std::string res;
+
+    if (cur == nullptr)
+      return res;
+
+    res += std::to_string(cur->value);
+
+    if (s == "_")
+      return res;
+
+    for (char c : s) {
+      if (c == 'L')
+        cur = cur->left;
+      else if (c == 'R')
+        cur = cur->right;
+      res += " " + std::to_string(cur->value);
+    }
+    return res;
+  }
+
+  std::string pathFinder(int i) {
+    int a = height();
+    if (i == root->value)
+      return "root";
+    for (int len = 1; len <= i; ++len) {
+      std::vector<std::string> vec = genLRVector(len);
+      for (auto &p : vec) {
+        if (path(p) == i) {
+          return path2(p);
+        }
+      }
+    }
+
+    return "error";
   }
 };
 

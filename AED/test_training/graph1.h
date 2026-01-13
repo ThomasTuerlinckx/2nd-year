@@ -24,6 +24,9 @@ class Graph {
   struct Node {
     std::list<Edge> adj; // The list of outgoing edges (to adjacent nodes)
     bool visited;        // Has the node been visited in a graph traversal?
+    bool beingVisited;
+    bool red = false;
+    bool green = false;
   };
 
   int n;                   // Graph size (vertices are numbered from 1 to n)
@@ -85,7 +88,7 @@ public:
     }
   }
 
-  // --------------------------------------------------------------
+  //--------------------------------------------------------------
   // Breadth-First Search (BFS): example implementation
   // --------------------------------------------------------------
   void bfs(int v) {
@@ -114,7 +117,13 @@ public:
   // TODO: put the functions you need to implement below this
   // ---------------------------------------------------------
 
-  int outDegree(int v) { return nodes[v].adj.size(); }
+  int outDegree(int v) {
+    int sum = 0;
+    for (auto e : nodes[v].adj) {
+      sum++;
+    }
+    return sum;
+  }
 
   int weightedOutDegree(int v) {
     int sum = 0;
@@ -123,7 +132,6 @@ public:
     }
     return sum;
   }
-
   void dfs2(int v) {
     // show node order
     nodes[v].visited = true;
@@ -147,86 +155,131 @@ public:
     }
     return counter;
   }
+
   int dfs3(int v) {
+
     nodes[v].visited = true;
-    int size = 1;
+    int sum = 1;
+    for (auto e : nodes[v].adj) {
+      int w = e.dest;
+      if (!nodes[w].visited)
+        sum += dfs3(w);
+    }
+    return sum;
+  }
+
+  int largestComponent() {
+    int max = 0;
+    for (int v = 1; v <= n; v++) {
+      if (!nodes[v].visited) {
+        int a = dfs3(v);
+        if (max < a) {
+          max = a;
+        }
+      }
+    }
+    return max;
+  }
+
+  void RecurssiveDFS(int i, std::list<int> &order) {
+    nodes[i].visited = true;
+    for (Edge e : nodes[i].adj) {
+      if (!nodes[e.dest].visited) {
+        RecurssiveDFS(e.dest, order);
+      }
+    }
+    order.push_back(i);
+  }
+
+  std::list<int> topologicalSorting() {
+    std::list<int> l;
+    for (int i = 1; i <= n; i++) {
+      if (!nodes[i].visited) {
+        RecurssiveDFS(i, l);
+      }
+    }
+    l.reverse();
+    return l;
+  }
+
+  bool CycleDfs(int v) {
+    nodes[v].beingVisited = true;
+    nodes[v].visited = true;
 
     for (auto e : nodes[v].adj) {
       int w = e.dest;
-
+      if (nodes[w].beingVisited) {
+        return true;
+      }
       if (!nodes[w].visited) {
-        size += dfs3(w);
+        if (CycleDfs(w))
+          return true;
       }
     }
-
-    return size;
-  }
-  /*
-    int largestComponent() {
-      int maxSize = 0;
-
-      for (int v = 1; v <= n; v++) {
-        nodes[v].visited = false;
-      }
-
-      for (int v = 1; v <= n; v++) {
-        if (!nodes[v].visited) {
-          int;
-          if (compSize > maxSize)
-            maxSize = compSize;
-        }
-      }
-
-      return maxSize;
-    }*/
-
-  void dfsOrder(int v, std::vector<bool> &visited, std::vector<int> &order) {
-    visited[v] = true;
-    for (auto e : nodes[v].adj) {
-      if (!visited[e.dest])
-        dfsOrder(e.dest, visited, order);
-    }
-    order.push_back(v);
+    nodes[v].beingVisited = false;
+    return false;
   }
 
-  void dfsSCC(int v, std::vector<bool> &visited,
-              const std::vector<std::list<int>> &revAdj) {
-    visited[v] = true;
-    for (int w : revAdj[v]) {
-      if (!visited[w])
-        dfsSCC(w, visited, revAdj);
-    }
-  }
-
-  int countSCCs() {
-    std::vector<bool> visited(n + 1, false);
-    std::vector<int> order;
-
+  bool hasCycle() {
+    bool coolBolleanVallue = false;
     for (int i = 1; i <= n; i++) {
-      if (!visited[i])
-        dfsOrder(i, visited, order);
-    }
-
-    std::vector<std::list<int>> revAdj(n + 1);
-    for (int u = 1; u <= n; u++) {
-      for (auto e : nodes[u].adj) {
-        revAdj[e.dest].push_back(u);
+      if (coolBolleanVallue == false) {
+        coolBolleanVallue = CycleDfs(i);
       }
     }
-
-    std::fill(visited.begin(), visited.end(), false);
-    int sccCount = 0;
-
-    for (int i = n - 1; i >= 0; i--) {
-      int v = order[i];
-      if (!visited[v]) {
-        dfsSCC(v, visited, revAdj);
-        sccCount++;
-      }
-    }
-
-    return sccCount;
+    return coolBolleanVallue;
   }
-};
+
+  bool binaryDfsRed(int i) {
+    if (nodes[i].green)
+      return false;
+
+    if (nodes[i].red)
+      return true;
+
+    nodes[i].red = true;
+
+    for (auto e : nodes[i].adj) {
+      int w = e.dest;
+
+      if (nodes[w].red)
+        return false;
+
+      if (!nodes[w].red && !nodes[w].green) {
+        if (!binaryDfsGreen(w))
+          return false;
+      }
+    }
+
+    return true;
+  }
+
+  bool binaryDfsGreen(int i) {
+    if (nodes[i].red)
+      return false;
+
+    if (nodes[i].green)
+      return true;
+
+    nodes[i].green = true;
+
+    for (auto e : nodes[i].adj) {
+      int w = e.dest;
+
+      if (nodes[w].green)
+        return false;
+
+      if (!nodes[w].red && !nodes[w].green) {
+        if (!binaryDfsRed(w))
+          return false;
+      }
+    }
+
+    return true;
+  }
+  bool isBipartite() { return binaryDfsRed(1); }
+}
+
+;
 
 #endif

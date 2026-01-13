@@ -1,0 +1,321 @@
+Ovalipes catharus, commonly known as the paddle crab,[a] swimming crab,[b] or, in Māori, pāpaka,[9] is a species of crab in the family Ovalipidae.[4][10] It is found in shallow, sandy-bottomed waters around the coasts of New Zealand, the Chatham Islands, and uncommonly in southern Australia.[1][2][3] O. catharus is an opportunistic, aggressive, and versatile feeder active mostly at night, preying predominantly on molluscs and crustaceans.[11][12][13] It is also highly prone to cannibalism, which accounts for over a quarter of its diet in some locations.[14] The crab's paddle-shaped rear legs and streamlined carapace allow it to capture prey by swimming rapidly and to escape predation by burrowing in the sand.[15] Its mating season is in winter and spring; the male carries the female until she moults, after which the two mate and the female likely moves into deeper waters to incubate and disperse her larvae.[16][17]
+
+Commercial fisheries have harvested paddle crabs since the 1970s, with catches declining considerably from a peak in the late 1990s.[18] Its population is expected to be increasing,[12] although ecologists have raised concerns that Charybdis japonica, an invasive crab with a similar size, diet, and habitat, could outcompete the paddle crab.[19] O. catharus is present in Māori culture both as an artistic motif and as a traditional source of food.[20]
+Description
+See also: Decapod anatomy
+Frontal view of Ovalipes catharus walking on the seabed or potentially resting on a dark-coloured rock. The chelipeds, mouthparts, eyestalks, antennae, walking legs, and some of the dorsal carapace are visible. Fine, white hairs line the area directly underneath the lateral teeth. Fine hairs in the orbits and above the mouth are a sandy brown colour. The bottoms of the eyes are covered in sand.
+The front of O. catharus directly under the dorsal carapace is lined with setae.[21]
+
+Ovalipes catharus has an oval-shaped, streamlined, and slightly grainy carapace with five large, sawtooth-like projections to either side of the eyes and four smaller ones at the front.[1][15][21] The dorsal carapace has two large, maroon eyespots at the rear, two smaller eyespots near the front, and cervical grooves which form a butterfly-shaped mark near the centre.[1][22][23] It is overall sandy grey with orange-red highlights and dotted with small, brown spots.[1][24] The crab's underside is white, and its rear legs – which are flattened and function as swimming paddles – have a purplish tinge.[1][25] Unlike about half of Ovalipes species, O. catharus' body exhibits no iridescence.[26] The area above its mouth near the base of the antennae is somewhat hairy, and a line of setae runs from the base of its deep orbits out to the area underneath the carapace teeth.[21] Like other Ovalipes, O. catharus has well-developed, relatively large eyes.[15][27]
+
+Ovalipes catharus' relatively short front legs – the chelipeds – feature spines and granules on the wrists and setae on the posterior border of the arms.[21] The left pincer (minor chela) is smaller than its right (major chela), and both dactyli – the movable tip of its claws – are slender and tapered.[28] The minor chela grows in direct proportion to the carapace width in females, but it may exhibit proportionally smaller growth (negative allometry) in males.[29][c] The minor chela, used for cutting, is lined with small, conical teeth on both fingers, while the major chela also features a large proximal tooth used for crushing.[31] It has three pairs of walking legs,[d] which are somewhat granular and relatively flat.[1][34] The flattened rear paddles are fringed with setae.[1]
+
+Mature male paddle crabs can reach carapace widths up to 150 mm (5.9 in),[12] and the largest males weigh around 600–700 g (21–25 oz).[35] Sexually mature females typically have a carapace width of >70 mm (2.8 in) and are known to be as wide as about 115 mm (4.5 in).[36][37] Abdomen size in males and juvenile females grows in direct proportion to carapace width, but above a carapace width of 30–40 mm (1.2–1.6 in), the female's abdomen exhibits positive allometry.[29][38][e] On average, the carapace is about 1.35x as broad as it is long,[21] and relative carapace length diminishes compared to the width as the crab grows.[29]
+
+Ovalipes catharus' full lifespan is 3–5 years.[40] It has a long period of larval development compared to other decapods – about two months with eight zoeal (larval) stages.[41][42] During oogenesis, an oocyte buds off from an oogonium and initially measures 5–25 μm in diameter; as it develops, it grows to about 0.32 mm (0.013 in).[43] The egg is nearly spherical, ranging from yellow and approximately 0.3 mm (0.012 in) in diameter when newly laid to black and approximately 0.37 mm (0.015 in) about a month later immediately prior to hatching into a zoea.[42][44] The zoea is transparent or blackish, later develops red chromatophores, and then turns black when it moults into a megalopa.[42] The zoea features a prominent dorsal spine and similarly prominent rostral spine as well as two smaller lateral spines.[42] In its megalopal form, the rostrum is relatively much smaller, and the carapace – about 4.65 mm (0.18 in) long – is entirely smooth.[42] After its megalopal form, the paddle crab has 13 distinct developmental stages, called instars, and reaches its maximum size at 3–4 years old.[45] It is suspected that this growth is limited only by its lifespan and that it could otherwise continue to moult indefinitely once per year.[46] Members of the isolated population of O. catharus from the Chatham Islands tend to be larger and take longer to mature than those in mainland New Zealand.[41][47]
+Physiology and internal anatomy
+
+Ovalipes catharus is either an osmoconformer or a weak osmoregulator.[48] It can reverse the direction of its ventilatory flow by adjusting the sizes of apertures located at the bases of its legs, presumed to be a means of keeping particulate matter from obstructing these apertures.[49] The apertures lead into the branchial chamber and are covered in dense setae for filtration.[50] Unlike in most decapods, this period of reversed flow can be sustained, and it is commonly seen when the crab is buried or at rest.[51]
+
+Its heart is a single-chambered ventricle which ejects hemolymph to seven arteries.[52] Five arteries, including the anterior aorta, leave the heart anteriorly and supply organs such as the cerebral ganglion, eyes, antennae, hepatopancreas, and various digestive organs.[52] One, which leaves the heart ventrally, is called the sternal artery and accounts for nearly 70% of flow; this branches into vessels which supply its five pairs of legs, the largest of which are those supplying its rear paddles.[53] Finally, a relatively small posterior aorta runs down the middle of the crab's abdomen.[54]
+
+Ovalipes catharus is a stenotherm, highly sensitive to temperature.[55] An increase in water temperature of just a few degrees substantially accelerates its growth.[56] At summer temperatures of about 20 °C (68 °F), O. catharus' heart rate is approximately 50 bpm.[57] Above this temperature, its heartbeats begin to shorten.[55] Its heart rate is more than doubled to 125 bpm at 25 °C (77 °F),[58] and temperatures around 30 °C (86 °F) are fatal.[55] Phosphorylation of ADP during respiration also decreases at temperatures over 20 °C (68 °F), indicating reduced ability of the mitochondria to produce ATP.[59] At temperatures around 10 °C (50 °F) – near the lower end of what it experiences in the wild[60] – O. catharus needs to be actively encouraged to eat, eats less overall, and takes over three times as long to digest its food as it does at 20 °C (68 °F).[61][62]
+
+Ovalipes catharus hears underwater by using a small canal system located under its first antenna called a statocyst.[63] The statocyst contains an agglomerate of sand particles called the statolith and functions similarly to the otolith in vertebrates.[64] O. catharus is able to hear sounds between at least 40–2000 Hz, but it is especially sensitive to the range between 100–200 Hz.[65] It uses a yet-unknown internal mechanism to create a broad-frequency, multi-pulse "rasp" sound which is hypothesised to communicate food availability to other members of the species.[66] Males additionally use a yet-unknown internal mechanism to produce a sub-bass sound used in their mating behaviour.[67]
+Taxonomy
+Rear view of Ovalipes catharus swimming with its rear, paddle-shaped legs raised and its walking legs spread out laterally. Set against a teal, watery background with no visible seabed.
+O. catharus uses its paddle-shaped rear legs to swim.[25]
+
+Ovalipes catharus is colloquially known as the paddle crab,[a] the swimming crab,[b] or, in Māori, pāpaka.[9] It was described in 1843 by zoologist Adam White from a specimen in the British Museum collected by Andrew Sinclair.[24] Although White placed it into the genus Portunus,[24] marine biologists William Stephenson and May Rees placed it in the genus Ovalipes in 1968 based on its colour patterns.[68] Having been misidentified as O. punctatus like three other species had prior to 1968, O. catharus is part of a distinct group of Ovalipes which also includes O. australiensis, O. elongatus, O. georgei, O. punctatus, and O. trimaculatus.[69][f] O. catharus additionally closely resembles (and is likely conspecific with) a fossilised cheliped fragment from New Zealand's Upper Pleistocene.[71][72] Three aspects taken together reliably distinguish O. catharus from other members of Ovalipes: fine granules on the raised ridges of the top side of its chelae, moderately fine stripes on the underside of its chelae, and a notably broad carapace (~1.35x broader than long).[21] The following cladogram based on morphology shows the relationship between O. catharus and the other extant species of Ovalipes:[73][g]
+Dorsal view of a preserved Ovalipes catharus specimen with the anterior facing the bottom of the frame. A note at the top reads "Norman Douglas collection. Beneath that, another reads: "Ovalipes bipustulatus. Swimming crab. Maketu, Bay of Plenty, 5 April, 1977. Ashore, dead, in a wash up of seaweed on the western shore of the peninsula. N. Douglas." A note to the right of these two, another reads: "AK 78855. Auckland Museum, N.Z. Porcellanidae. Ovalipes catharus. L3523: N.Z., Bay of Plenty, Maketu, on the western shore of the peninsula Washed up, dead in seaweed. c. 37 44.8 S, 176 27.8 E. Coll: Douglas, N., 05 APR 1977. CMROVA.CAT." To the crab's left is an OpCard 201 colour correction chart. A ruler in centimetres is at the bottom of the frame, revealing a carapace width of approximately 100 millimetres. The crab's carapace and chelipeds are a light-yellowish colour with maroon spots. The walking legs and paddles are a dark, sandy brown.
+A preserved O. catharus specimen
+Ovalipes 	
+      	
+      	
+
+Ovalipes georgei
+      	
+      	
+      	
+      	
+      	
+
+Ovalipes australiensis
+      	
+
+Ovalipes punctatus
+      	
+
+Ovalipes elongatus
+      	
+
+Ovalipes trimaculatus
+      	
+
+Ovalipes catharus
+      	
+      	
+      	
+      	
+      	
+
+Ovalipes ocellatus
+      	
+
+Ovalipes stephensoni
+      	
+
+Ovalipes floridanus
+      	
+      	
+
+Ovalipes iridescens
+      	
+
+Ovalipes molleri
+
+
+Distribution and habitat
+
+Ovalipes catharus is native to New Zealand, where it can be found from Stewart Island to Northland and in the Chatham Islands.[3][25] It is also present – but uncommon – on the southern coast of Australia, where it is known as far west as the state of South Australia and as far east as Port Phillip Bay in Victoria.[1][2][42] It lives along sandy-bottomed coastal waters, generally at depths of <10 m (33 ft) in estuaries and the subtidal zone;[74][37][75] it typically buries itself within the sediment during the day and moves into the intertidal zone during the evening or the night in order to feed.[12][15] The youngest juveniles tend to reside in shallow waters of about 10–50 cm (4–20 in), while deeper waters of 5–15 m (16–49 ft) often house the largest, most mature individuals.[76] Although it generally sticks to shallow waters, it can be found at depths of up to 100 m (330 ft),[74] and the larvae can be found up to at least 700 m (2,300 ft) deep.[47] Juveniles are typically found in sheltered waters after migrating inshore during their megalopal form.[41] Males and females aggregate in sheltered bays during the winter and spring breeding season.[77] Afterward, males move into large, open beaches in spring, while females migrate to yet-unknown areas – speculated to be deeper spawning grounds for egg incubation.[78] Anecdotal information suggests a substantial population increase since the 1970s.[12]
+Diet and foraging behaviour
+The off-white shell of a lone specimen of Paphies australis sitting on a background of grey pebbles
+Bivalves such as Paphies australis are a significant portion of the paddle crab's diet.[79]
+
+The diet of Ovalipes catharus consists predominantly of molluscs (especially of genus Paphies), crustaceans, fishes, bristle worms, and algae.[80][12][81] Large paddle crabs tend to feed less frequently – generally on algae as well as on larger animals such as decapods and teleosts – while smaller ones prey frequently on smaller, softer crustaceans such as amphipods, isopods, mysids, and cumaceans.[82] It frequently cannibalises smaller conspecifics and those that have recently moulted.[83][84] Other O. catharus generally comprise at least several percent of the paddle crab's diet, and in some locations such as Plimmerton and Paremata, this is over 25%.[85] It tends to eat more during the summer than during the winter.[61][62] No known difference in diet exists between males and females.[11]
+
+The flattened hind legs and streamlined body shape of the crab allow it to swim at speeds up to 1 m/s (2.2 mph) and catch fast prey.[25][15][86] It additionally has slender, tapered chelae which are well-suited to handling small molluscs,[31] and correspondingly, molluscs eaten are generally less than 4 mm (0.16 in) in length.[87] Its chelae are dimorphic, exhibiting two different forms: the left is used for cutting while the right is used for crushing.[28] The paddles also allow the crab to stabilise itself and balance on its third pair of walking legs when digging bivalve prey out of the sand.[88]
+Predators and other interactions
+A video of Ovalipes catharus retreating backward into loose, pebbly sand on the seabed, fully covering itself from back to front over a period of 6.5 seconds. The video is shot from the front at an angle of about 45 degrees to the right relative to where the crab is facing. Brownish seaweed is visible in the foreground of the shot.
+O. catharus burrow in the seabed to escape predation.[15]
+
+Predators of the paddle crab include spiny dogfish,[89] Australasian snapper,[15] rig,[90] groper,[15] Hector's dolphin,[91] Buller's albatross,[92] the New Zealand sea lion,[93] and the invasive crab species Charybdis japonica.[94] Younger individuals are prone to being cannibalised, and all paddle crabs are vulnerable to cannibalism during moulting.[83] Commercial fisheries additionally target the paddle crab.[95] In order to escape predation, Ovalipes catharus creates temporary burrows in soft sand using its paddles, taking only several seconds on average to completely submerge itself by loosening the sand and retreating backward into the substrate.[96] It rests horizontally under about 10–20 mm (0.4–0.8 in) of sand, sometimes leaving its eyestalks poking out.[33]
+
+Ecologists have raised concerns that the invasive Asian paddle crab Charybdis japonica, as it expands its range in New Zealand, could outcompete O. catharus with its similar size and diet, some overlap in habitat, high aggression, ability to best O. catharus in one-on-one competition for food, and – due to global warming – its better thermal tolerance.[19][97][98] O. catharus appears to be largely unaffected by parasites commonly present in C. japonica;[75] for example, it does not appear to be typically parasitised by serpulids, nematodes, or barnacles.[99] The overwhelming majority of O. catharus[h] are instead hosts to the ctenosome bryozoan Triticella capsularis, which forms a fur of up to almost 10 mm (0.4 in) thick on their underside after their final moult.[100][99] It is only found on O. catharus,[100] and it is speculated to be an obligate symbiont of the crab.[101]
+Mating and reproduction
+See also: Marine larval ecology
+A perspective looking out from a sandy, brownish-grey beach (covered in to the dark pebbles to the left and smooth to the right) toward the somewhat-distant mouth of the bay, which is flanked on either side by peninsulas. The left is steep and lightly forested, while the right is shallow and bald except for grass. Very weak waves wash up onto the shore.
+During winter and spring, O. catharus meet in sheltered bays such as Little Akaloa for breeding.[77]
+
+Ovalipes catharus undergoes a pubertal moult at a carapace width of about 50–60 mm (2.0–2.4 in), reaching sexual maturity within the first year of benthic life.[38][102][e] Males and females begin to aggregate in shallow, sheltered bays during winter for mating,[103] and breeding occurs from May to November at the time the female moults.[104] Warmer temperatures extend the breeding season, accelerate growth, and lead to earlier sexual maturity, causing variation in mating times between populations.[103][105]
+
+In response to male competition near a receptive female, males become aggressive and communicate using sounds, although it is unknown if these are directed toward the female, the competing males, or both.[106] The male alternates between two sounds: a multi-pulse, low-mid frequency "zip" sound – created by rubbing the ridges on the underside of its chelae against a plectrum-like joint on its first walking legs; and a series of sub-bass vibrations – accompanied by periodic swaying but produced by a yet-unknown internal mechanism.[107] The zip is accompanied by what may be a courtship display whereby the crab "walks forward and flicks both swimming paddles in a twisting motion."[67]
+
+A male paddle crab can only mate with a soft-bodied female within a four-day window after her moult,[108][i] so he carries a pre-moult female under his body for up to 10 days prior to mating.[109][110] A male who is otherwise hungry will generally refrain from cannibalising a suitable female partner;[111] instead, he tends to protect the female during mating, which lasts between 12 and 36 hours and even up to four days.[112][113] After mating and separation, the male can continue to identify his partner to avoid sexual cannibalism while her body is still soft, but this sometimes still happens.[111] Protection given by males during this process when the female is vulnerable from moulting is hypothesised to explain why several locations have sex ratios skewed in favour of females.[114]
+
+The female is released by the male after mating and moves on to spawning grounds in what are likely deeper waters.[103] It is not known how many egg batches can be fertilised from one insemination, but females have been observed to produce up to four or five without re-mating.[115][116] Number of eggs per batch is strongly correlated with carapace width and body mass, with larger and heavier crabs producing more.[112] In one batch, female crabs have been found to produce between as few as 80,000 and as many as 850,000 eggs, and a large female of about 100 mm (3.9 in) typically produces around 500,000.[117][37] Like in other crabs, however, a proportion of these are lost to disease, egg failure, and predation.[117] Larvae develop synchronously and are generally released at night.[118][108] They are released in large numbers through vigorous waving of the female's body, which disturbs their egg cases and causes them to break out.[108] When releasing, the female extends her legs to position herself as far above the seafloor as possible.[118] She then angles herself slightly upward and begins flexing her abdomen to release large clouds of larvae.[118] Females typically spawn all of their larvae at one time, but in some locations, they will release the larvae in multiple batches.[12][119] The spawning season generally occurs from September to March.[104][119] In total, a female paddle crab can produce up to an estimated 10 batches in a lifetime over the course of four breeding seasons.[120]
+Relation to humans
+
+Ovalipes catharus is known for its aggression on beaches, often pinching swimmers in New Zealand,[20][1] and paddle crab shells are frequently found washed ashore by beachgoers.[7] It is a common motif in Māori art, with designs being incorporated into weaving patterns, tā moko (facial tattoos), and the designs of wharenui (meeting houses) and whare wānanga (houses of learning).[20] The crabs are a traditional food source, but researchers in the early Colonial period did not record much about harvesting traditions.[20]
+
+Commercial fisheries have targeted paddle crabs since the late 1970s, mostly to the east of the North Island and the north of the South Island.[121][122] The paddle crab is known for having meat with both good flavour and texture,[123][124] and catch is sold both locally in New Zealand and overseas to Japan.[125][j] Paddle crab landings generally increased until the late 1990s, reaching a peak at 519 t (572 short tons; 1,144,000 lb) in 1998–1999, at which point they began generally decreasing for the next two decades, reaching an average of 16.6 t (18.3 short tons; 37,000 lb) annually from the five-year period of 2017–2022.[127] Whereas the majority of catch in the 1990s and 2000s came from the east coast of North Island and the west coast of South Island, this declined steeply in the 2010s, and catch in the 2020s has so far come almost exclusively from the east coast of South Island.[122][128] The causes of this decline in catch are not well-understood.[47][129]
+Notes
+
+Sometimes "New Zealand paddle crab"[5][6]
+Sometimes "common swimming crab"[7][8]
+This is disputed as potentially a statistical quirk.[30]
+Some sources exclude the rear paddles as walking legs and refer to them independently,[32] while others treat them as the last pair of walking legs.[33]
+The pubertal moult was originally identified at a carapace width of about 40 mm (1.6 in) in males and about 30–40 mm (1.2–1.6 in) in females,[39] but this is likely erroneous, corresponding instead to a subadult phase with relatively increased growth of secondary sexual characteristics, not sexual maturity.[38]
+This group – one of two – is distinguished from the rest of Ovalipes by features such as short chelipeds, large teeth to either side of the front of its carapace, and a triangular last segment of the male abdomen.[70]
+Ovalipes itself sits within the monogeneric family Ovalipidae.[10]
+97.4% of O. catharus surveyed from six sites were hosts to Triticella capsularis.[99]
+After four days, the female's carapace becomes too hardened to mate.[108]
+
+    In the 1980s, research was conducted into exporting to the United States, which had previously failed due to spoilage and lack of market interest.[126][123]
+
+References
+
+Wilkens, Serena L.; Ahyong, Shane T. (2015). Coastal Crabs: A Guide to the Crabs of New Zealand (PDF) (First ed.). NIWA. p. 43. Archived (PDF) from the original on 18 September 2024. Retrieved 7 October 2024.
+O'Hara, Tim; Barmby, Victoria (May 2000). Victorian Marine Species of Conservation Concern: Molluscs, Echinoderms and Decapod Crustaceans (Report). Victoria Department of Natural Resources and Environment. p. 45. ISBN 0-7311-4561-5 – via ResearchGate.
+McLay 1988, p. 200.
+De Grave, Sammy (10 April 2022). "Ovalipes catharus (White in White & Doubleday, 1843)". WoRMS. World Register of Marine Species. Retrieved 28 October 2024.
+Flood, Goeritz & Radford 2019, p. 1.
+Haddon 1994, p. 1.
+Ahyong, Shane T. (29 April 2010). "Summer Series 2: Cannibals of the seashore". NIWA. Archived from the original on 2 December 2024. Retrieved 29 November 2024.
+Miller, Michael; Batt, Gary (1973). Reef and Beach life of New Zealand. Collins. p. 88. ISBN 978-0-00-216706-2.
+Moorfield, John C. "pāpaka". Te Aka Māori Dictionary. Archived from the original on 5 March 2022. Retrieved 5 March 2022.
+Poore, Gary C.B.; Ahyong, Shane T. (2023). Marine Decapod Crustacea: A Guide to Families and Genera of the World. CRC Press. pp. 695–696. doi:10.1071/9781486311798. ISBN 978-1-4863-1178-1. LCCN 2021388782.
+Wear & Haddon 1987, pp. 39, 41.
+Fisheries New Zealand 2023, p. 1038.
+Haddon 1995, p. 256.
+Wear & Haddon 1987, pp. 40, 44.
+McLay & Osborne 1985, p. 125.
+Haddon 1994, p. 331.
+Osborne 1987, pp. 58, 84–86.
+Fisheries New Zealand 2023, p. 1035.
+Fowler, Muirhead & Taylor 2013, p. 672.
+Vennell, Robert (5 October 2022). Secrets of the Sea: The Story of New Zealand's Native Sea Creatures. HarperCollins UK. pp. 78–83. ISBN 978-1-77554-179-0. LCCN 2021388548. Wikidata Q114871191.
+Stephenson & Rees 1968, p. 225.
+Naylor, John R.; Webber, W. Richard; Booth, John D. (2005). A guide to common offshore crabs in New Zealand waters (PDF) (Report). New Zealand Aquatic Environment and Biodiversity Report. New Zealand Ministry of Fisheries. p. 24. ISSN 1176-9440.
+Stephenson & Rees 1968, pp. 226–227.
+White, Adam; Doubleday, Edward (1843). "List of Annulose Animals hitherto recorded as found in New Zealand, with the Descriptions of some New Species". In Dieffenbach, Ernest (ed.). Travels in New Zealand; with Contributions to the Geography, Geology, Botany, and Natural History of that Country. Vol. II. John Murray. p. 265 – via the Internet Archive.
+Osborne 1987, p. 3.
+Parker, Mckenzie & Ahyong 1998, p. 862.
+Parker, Mckenzie & Ahyong 1998, p. 861.
+Davidson 1986, pp. 285, 295.
+Davidson & Marsden 1987, p. 308.
+Clayton 1990, p. 285.
+Davidson 1986, p. 295.
+Davidson & Taylor 1995, p. 608.
+McLay & Osborne 1985, p. 126.
+Stephenson & Rees 1968, pp. 225–226.
+Davidson 1994, p. 4.
+Osborne 1987, pp. 55–56.
+McLay 1988, p. 202.
+Osborne 1987, p. 64.
+Davidson & Marsden 1987, p. 313.
+Osborne 1987, p. 101.
+McLay 1988, p. 203.
+Wear, Robert G.; Fielder, Donald R. (1985). The marine fauna of New Zealand: Larvae of Brachyura (Crustacea, Decapoda). New Zealand Oceanographic Institute Memoir 92. pp. 50–52. ISBN 0-477-06722-0. ISSN 0083-7903 – via the Internet Archive.
+Armstrong 1988, pp. 531–532.
+Osborne 1987, p. 62.
+Osborne 1987, p. 28.
+Osborne 1987, pp. 16, 101.
+Fisheries New Zealand 2023, p. 1039.
+Richards 1992, p. 48.
+Davidson & Taylor 1995, pp. 607–608.
+Davidson & Taylor 1995, p. 607.
+Davidson & Taylor 1995, pp. 605–606.
+Davidson & Taylor 1995, p. 611.
+Davidson & Taylor 1995, pp. 611–612, 621.
+Davidson & Taylor 1995, p. 612.
+Iftikar, MacDonald & Hickey 2010, p. 236.
+Osborne 1987, pp. 91–93.
+Iftikar, MacDonald & Hickey 2010, pp. 233–234.
+Iftikar, MacDonald & Hickey 2010, p. 234.
+Iftikar, MacDonald & Hickey 2010, pp. 236–237.
+Osborne 1987, p. 90.
+Haddon & Wear 1987, p. 63.
+Fenton et al. 2024, pp. 92–93.
+Radford, Tay & Goeritz 2016, p. 1.
+Radford, Tay & Goeritz 2016, pp. 1–2.
+Radford, Tay & Goeritz 2016, pp. 1, 6.
+Flood, Goeritz & Radford 2019, pp. 8–10.
+Flood, Goeritz & Radford 2019, p. 11.
+Stephenson & Rees 1968, p. 224.
+Stephenson & Rees 1968, pp. 214, 245.
+Stephenson & Rees 1968, pp. 213, 245–246.
+Stephenson & Rees 1968, p. 227.
+Glaessner 1960, p. 34.
+Parker, Mckenzie & Ahyong 1998, p. 866.
+Gust & Inglis 2006, p. 349.
+Miller, Inglis & Poulin 2006, p. 369.
+"Biology and Ecology of Ovalipes catharus" (worksheet). Bay of Plenty Polytechnic. p. 1. Archived from the original on 20 August 2011. Adapted from “Form 7 Biology Animal Study” by Paul Furneaux of Otumoetai College.
+Osborne 1987, pp. 58, 137.
+Osborne 1987, pp. 80, 84–86.
+Wear & Haddon 1987, p. 40.
+Wear & Haddon 1987, p. 41.
+Davidson 1987, p. 29.
+Osborne 1987, p. 118.
+Wear & Haddon 1987, pp. 47–48.
+Osborne 1987, p. 81.
+Wear & Haddon 1987, p. 44.
+McLay 1988, p. 204.
+Wear & Haddon 1987, p. 45.
+McLay & Osborne 1985, p. 129.
+Hanchet 1991, p. 317.
+King & Clark 1984, p. 32.
+Miller et al. 2012, p. 7.
+James & Stahl 2000, pp. 440, 445.
+Gales, Nick (1995). Hooker's Sea Lion Recovery Plan (Phocarctos hookeri) (PDF) (Report). New Zealand Department of Conservation. ISBN 0-478-01707-3. ISSN 1170-3806. Archived (PDF) from the original on 25 April 2024. Retrieved 10 May 2025.
+Fowler, Muirhead & Taylor 2013, p. 678.
+Fisheries New Zealand 2023, p. 1033.
+McLay & Osborne 1985, p. 127.
+Hilliam & Tuck 2023, p. 2.
+Iftikar, MacDonald & Hickey 2010, p. 232.
+Miller, Inglis & Poulin 2006, p. 373.
+Gordon & Wear 1999, p. 373.
+Miller, Inglis & Poulin 2006, p. 372.
+Osborne 1987, p. 124.
+Osborne 1987, p. 137.
+Osborne 1987, p. 60.
+Osborne 1987, p. 120.
+Flood, Goeritz & Radford 2019, p. 12.
+Flood, Goeritz & Radford 2019, pp. 7, 11.
+Haddon 1994, p. 333.
+Haddon 1994, pp. 331, 333.
+Osborne 1987, pp. 126, 127.
+Haddon 1995, pp. 257–258.
+Haddon 1994, p. 329.
+Haddon 1995, pp. 256, 258.
+Haddon 1995, p. 258.
+Osborne 1987, pp. 125–126.
+Haddon & Wear 1993, p. 287.
+Haddon 1994, pp. 330, 333.
+Haddon 1994, p. 332.
+Armstrong 1988, p. 534.
+Osborne 1987, p. 128.
+Osborne 1987, pp. 3–4.
+Fisheries New Zealand 2023, pp. 1033–1034.
+Osborne 1987, p. 4.
+McLay 1988, p. 208.
+Jester, Rhodes & Beuzenberg 2009, p. 369.
+Murray, Cameron (1984). "Promising export potential for paddle crabs [Ovalipes catharus]". Catch. 11 (9): 8. ISSN 0110-1722.
+Fisheries New Zealand 2023, pp. 1033, 1035.
+Pierre, Johanna P.; How, Jason R.; Dunn, Alistair (22 August 2022). Whale entanglements with New Zealand pot fisheries: characterisation and opportunities for management (PDF) (Report). New Zealand Department of Conservation. pp. 34–35. Archived (PDF) from the original on 12 November 2023. Retrieved 28 November 2024.
+
+    Weaver, Shannon Jane (2017). Investigating the socio-economic impacts of the introduced Asian paddle crab, Charybdis japonica, on New Zealand's native paddle crab fishery (Master of Environmental Sciences thesis). University of Waikato. p. 73. Archived from the original on 20 January 2025. Retrieved 3 January 2025.
+
+Bibliography
+
+    Glaessner, Martin F. (December 1960). "The fossil decapod crustacea of New Zealand and the evolution of the order Decapoda" (PDF). Paleontological Bulletin (31). New Zealand Geological Survey. ISSN 0078-8589. Archived (PDF) from the original on 5 January 2025. Retrieved 25 November 2024 – via the Natural History Museum of Los Angeles County.
+    Stephenson, William; Rees, May (July 1968). "A revision of the genus Ovalipes Rathbun, 1898 (Crustacea, Decapoda, Portunidae)" (PDF). Records of the Australian Museum. 27 (11): 213–261. doi:10.3853/j.0067-1975.27.1968.445. Archived (PDF) from the original on 5 January 2025. Retrieved 24 November 2024 – via the Australian Museum.
+    King, Ken J.; Clark, Malcolm R. (March 1984). "The food of rig (Mustelus lenticulatus) and the relationship of feeding to reproduction and condition in Golden Bay". New Zealand Journal of Marine and Freshwater Research. 18 (1): 29–42. Bibcode:1984NZJMF..18...29K. doi:10.1080/00288330.1984.9516026. ISSN 0028-8330.
+    McLay, Colin L.; Osborne, Tracey A. (June 1985). "Burrowing behaviour of the paddle crab Ovalipes catharus (White, 1843) (Brachyura: Portunidae)". New Zealand Journal of Marine and Freshwater Research. 19 (2): 125–130. Bibcode:1985NZJMF..19..125M. doi:10.1080/00288330.1985.9516078. ISSN 0028-8330.
+    Davidson, Robert J. (November 1986). "Mussel selection by the paddle crab Ovalipes catharus (White): Evidence of flexible foraging behaviour". Journal of Experimental Marine Biology and Ecology. 102 (2–3): 281–299. Bibcode:1986JEMBE.102..281D. doi:10.1016/0022-0981(86)90182-6.
+    Wear, Robert G.; Haddon, Malcolm (27 January 1987). "Natural diet of the crab Ovalipes catharus (Crustacea, Portunidae) around central and northern New Zealand". Marine Ecology Progress Series. 35 (1/2): 39–49. Bibcode:1987MEPS...35...39W. doi:10.3354/meps035039. JSTOR 24825007.
+    Haddon, Malcolm; Wear, Robert G. (March 1987). "Biology of feeding in the New Zealand paddle crab Ovalipes catharus (Crustacea, Portunidae)". New Zealand Journal of Marine and Freshwater Research. 21 (1): 55–64. Bibcode:1987NZJMF..21...55H. doi:10.1080/00288330.1987.9516200. ISSN 0028-8330.
+    Davidson, Robert J.; Marsden, Islay D. (April 1987). "Size relationships and relative growth of the New Zealand swimming crab Ovalipes catharus (White, 1843)". Journal of Crustacean Biology. 7 (2): 308–317. Bibcode:1987JCBio...7..308.. doi:10.1163/193724087X00261. JSTOR 1548611.
+    Davidson, Robert J. (1987). Natural food and predatory activity of the paddle crab, Ovalipes catharus: A flexible forager (Master of Science thesis). University of Canterbury. pp. 2–15. doi:10.26021/6041.
+    Osborne, Tracey A. (1987). Life history and population biology of the paddle crab, Ovalipes catharus (PhD thesis). University of Canterbury. doi:10.26021/6494.
+    Armstrong, James H. (December 1988). "Reproduction in the paddle crab Ovalipes catharus (Decapoda: Portunidae) from Blueskin Bay, Otago, New Zealand". New Zealand Journal of Marine and Freshwater Research. 22 (4): 529–536. Bibcode:1988NZJMF..22..529A. doi:10.1080/00288330.1988.9516323. ISSN 0028-8330.
+    McLay, Colin L. (1988). Brachyura and crab-like Anomura of New Zealand (Report). Leigh Laboratory Bulletin. pp. 200–209 – via ResearchGate.
+    Clayton, David A. (May 1990). "Crustacean allometric growth: A case for caution". Crustaceana. 58 (3): 270–290. Bibcode:1990Crust..58..270C. doi:10.1163/156854090X00183. JSTOR 20104553. "With such closely similar growth equations it is difficult to believe that the negative allometry of the [male Ovalipes catharus] and isometry of the females represent a real difference between the sexes and not just a statistical one."
+    Hanchet, Stuart (September 1991). "Diet of spiny dogfish, Squalus acanthias Linnaeus, on the east coast, South Island, New Zealand". Journal of Fish Biology. 39 (3): 313–323. Bibcode:1991JFBio..39..313H. doi:10.1111/j.1095-8649.1991.tb04365.x.
+    Richards, Robert N. (1992). The structure and function of the gills of the New Zealand paddle crab: Ovalipes catharus (Master of Sciences thesis). University of Canterbury. doi:10.26021/13400.
+    Haddon, Malcolm; Wear, Robert G. (September 1993). "Seasonal incidence of egg-bearing in the New Zealand paddle crab Ovalipes catharus (Crustacea: Brachyura), and its production of multiple egg batches". New Zealand Journal of Marine and Freshwater Research. 27 (3): 287–293. Bibcode:1993NZJMF..27..287H. doi:10.1080/00288330.1993.9516569. ISSN 0028-8330.
+    Haddon, Malcolm (December 1994). "Size – fecundity relationships, mating behaviour, and larval release in the New Zealand paddle crab, Ovalipes catharus (White 1843) (Brachyura: Portunidae)". New Zealand Journal of Marine and Freshwater Research. 28 (4): 329–334. Bibcode:1994NZJMF..28..329H. doi:10.1080/00288330.1994.9516622. ISSN 0028-8330.
+    Davidson, Glen W. (1994). The respiratory physiology of the New Zealand paddle crab, Ovalipes catharus (PhD thesis). University of Canterbury. Archived from the original on 17 December 2024. Retrieved 21 November 2024.
+    Davidson, Glen W.; Taylor, Harry H. (October 1995). "Ventilatory and vascular routes in a sand-burying swimming crab, Ovalipes catharus (White, 1843) (Brachyura: Portunidae)". Journal of Crustacean Biology. 15 (4): 605–624. Bibcode:1995JCBio..15..605.. doi:10.1163/193724095X00019. JSTOR 1548810.
+    Haddon, Malcolm (October 1995). "Avoidance of post-coital cannibalism in the brachyurid paddle crab Ovalipes catharus". Oecologia. 104 (2): 256–258. Bibcode:1995Oecol.104..256H. doi:10.1007/BF00328590. JSTOR 4221102. PMID 28307362.
+    Parker, Andrew R.; Mckenzie, David R.; Ahyong, Shane T. (22 May 1998). "A unique form of light reflector and the evolution of signalling in Ovalipes (Crustacea: Decapoda: Portunidae)". Proceedings of the Royal Society B: Biological Sciences. 265 (1399): 861–867. doi:10.1098/rspb.1998.0371. PMC 1689053.
+    Gordon, Dennis P.; Wear, Robert G. (1999). "A new ctenostome brozoan ectosymbiotic with terminal-moult paddle crabs (Portunidae) in New Zealand". New Zealand Journal of Zoology. 26 (4): 373–380. doi:10.1080/03014223.1999.9518200.
+    James, Gavin D.; Stahl, Jean-Claude (2000). "Diet of southern Buller's albatross (Diomedea bulleri bulleri) and the importance of fishery discards during chick rearing". New Zealand Journal of Marine and Freshwater Research. 43 (3): 435–454. Bibcode:2000NZJMF..34..435J. doi:10.1080/00288330.2000.9516946. ISSN 0028-8330.
+    Gust, Nick; Inglis, Graeme J. (March 2006). "Adaptive multi-scale sampling to determine an invasive crab's habitat usage and range in New Zealand". Biological Invasions. 8 (2): 339–353. Bibcode:2006BiInv...8..339G. doi:10.1007/s10530-004-8243-y – via ResearchGate.
+    Miller, Aroha; Inglis, Graeme J.; Poulin, Robert (June 2006). "Comparison of the ectosymbionts and parasites of an introduced crab, Charybdis japonica, with sympatric and allopatric populations of a native New Zealand crab, Ovalipes catharus (Brachyura: Portunidae)". New Zealand Journal of Marine and Freshwater Research. 40 (2): 369–378. Bibcode:2006NZJMF..40..369M. doi:10.1080/00288330.2006.9517428. ISSN 0028-8330.
+    Jester, Rozalind J.; Rhodes, Lesley L.; Beuzenberg, Veronica (January 2009). "Uptake of paralytic shellfish poisoning and spirolide toxins by paddle crabs (Ovalipes catharus) via a bivalve vector". Harmful Algae. 8 (2): 369–376. Bibcode:2009HAlga...8..369J. doi:10.1016/j.hal.2008.08.002. ISSN 1568-9883.
+    Iftikar, Fathima I.; MacDonald, Julia; Hickey, Anthony J.R. (November 2010). "Thermal limits of portunid crab heart mitochondria: Could more thermo-stable mitochondria advantage invasive species?". Journal of Experimental Marine Biology and Ecology. 395 (1–2): 232–239. Bibcode:2010JEMBE.395..232I. doi:10.1016/j.jembe.2010.09.005.
+    Miller, Elanor J.; Lalas, Chris; Dawson, Stephen M.; Ratz, Hultrun; Slooten, Elisabeth (August 2012). "Hector's dolphin diet: The species, sizes and relative importance of prey eaten by Cephalorhynchus hectori, investigated using stomach content analysis". Marine Mammal Science. 29 (4): 606–628. Bibcode:2013MMamS..29..606M. doi:10.1111/j.1748-7692.2012.00594.x – via ResearchGate.
+    Fowler, Amy E.; Muirhead, Jim R.; Taylor, Richard B. (September 2013). "Early Stages of A New Zealand Invasion By Charybdis Japonica (A. Milne-Edwards, 1861) (Brachyura: Portunidae) from Asia: Behavioral Interactions with A Native Crab Species". Journal of Crustacean Biology. 33 (5): 672–680. Bibcode:2013JCBio..33..672T. doi:10.1163/1937240X-00002177. JSTOR 43835684.
+    Radford, Craig A.; Tay, Kevin; Goeritz, Marie L. (October 2016). "Hearing in the paddle crab, Ovalipes catharus". Proceedings of Meetings on Acoustics. 27 (1): 010013. doi:10.1121/2.0000259. eISSN 1939-800X.
+    Flood, Ashley S.; Goeritz, Marie L.; Radford, Craig A. (November 2019). "Sound production and associated behaviours in the New Zealand paddle crab Ovalipes catharus". Marine Biology. 166 (12): 162. Bibcode:2019MarBi.166..162F. doi:10.1007/s00227-019-3598-x.
+    Fisheries Assessment Plenary May 2023 Volume 2 – Paddle Crabs (PAD) (Report). Fisheries New Zealand. 21 June 2023. Archived from the original on 7 November 2024. Retrieved 9 October 2024.
+    Hilliam, Kyle; Tuck, Ian D. (October 2023). "Range expansion of the invasive portunid crab Charybdis japonica in New Zealand". New Zealand Journal of Marine and Freshwater Research. 57 (4): 518–534. Bibcode:2023NZJMF..57..518H. doi:10.1080/00288330.2022.2071301. ISSN 0028-8330 – via ResearchGate.
+    Fenton, Ketherine F.; et al. (January 2024). "High densities of large tuaki, the New Zealand cockle Austrovenus stutchburyi, provide a post-settlement predation refuge for conspecific juveniles". Marine Ecology Progress Series. 726: 85–98. Bibcode:2024MEPS..726...85F. doi:10.3354/meps14466.
+
+External links
+
+    Media related to Ovalipes catharus at Wikimedia Commons
+    Data related to Ovalipes catharus at Wikispecies
+    Video of several paddle crabs at Lion Rock in New Zealand (via YouTube)
+
+
+Taxon identifiers
+Ovalipes catharus	
+
+    Wikidata: Q7113226 Wikispecies: Ovalipes catharus AFD: Ovalipes_catharus BOLD: 325714 CoL: 4B9KF EoL: 46508929 GBIF: 4648356 iNaturalist: 144096 IRMNG: 10537826 NCBI: 2567121 NZOR: 98649b40-93cc-4235-9c9b-689a381d38fc OBIS: 442757 Open Tree of Life: 2979114 SeaLifeBase: 153180 WoRMS: 442757
+
+Portunus catharus	
+
+    Wikidata: Q109655343 CoL: 4M2MZ GBIF: 5799412
+
+Portals:
+
+    icon Crustaceans
+    Marine life
+    flag New Zealand
+    flag Australia
+
+Categories:
+
+    PortunoideaCrabs of the Pacific OceanCrustaceans described in 1843Taxa named by Adam White (zoologist)Marine crustaceans of New ZealandEdible crustaceansMarine fauna of Southern AustraliaCrustaceans of Australia

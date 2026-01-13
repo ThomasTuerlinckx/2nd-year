@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/socket.h>
+#include <sys/wait.h>
+#include <unistd.h>
+int main(int argc, char *argv[]) {
+  char buf[1024];
+  int sockets[2], retv;
+  retv = socketpair(AF_UNIX, SOCK_STREAM, 0, sockets);
+  if (retv == -1) {
+    perror("socketpair");
+    exit(EXIT_FAILURE);
+  }
+  retv = fork();
+  if (retv == -1) {
+    perror("fork");
+    exit(EXIT_FAILURE);
+  }
+  if (retv > 0) { /* parent */
+    char string1[] = "In every walk with nature...";
+    close(sockets[1]);
+    write(sockets[0], string1, sizeof(string1));
+    read(sockets[0], buf, sizeof(buf));
+    printf("message from %d-->%s\n", getpid(), buf);
+    close(sockets[0]);
+    retv = wait(NULL);
+    if (retv == -1) {
+      perror("wait");
+      exit(EXIT_FAILURE);
+    }
+  } else { /* child */
+    char string2[] = "...one receives far more than he seeks.";
+    close(sockets[0]);
+    read(sockets[1], buf, sizeof(buf));
+    printf("message from %d-->%s\n", getppid(), buf);
+    write(sockets[1], string2, sizeof(string2));
+    close(sockets[1]);
+    exit(EXIT_SUCCESS);
+  }
+}

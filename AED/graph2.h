@@ -114,119 +114,71 @@ public:
   // TODO: put the functions you need to implement below this
   // ---------------------------------------------------------
 
-  int outDegree(int v) { return nodes[v].adj.size(); }
+  int distance(int a, int b) {
+    if (a == b)
+      return 0;
 
-  int weightedOutDegree(int v) {
-    int sum = 0;
-    for (auto e : nodes[v].adj) {
-      sum += e.weight;
-    }
-    return sum;
-  }
+    std::vector<int> dist(n + 1, -1);
+    std::queue<int> qu;
+    dist[a] = 0;
+    qu.push(a);
 
-  void dfs2(int v) {
-    // show node order
-    nodes[v].visited = true;
-    for (auto e : nodes[v].adj) {
-      int w = e.dest;
-      if (!nodes[w].visited)
-        dfs2(w);
-    }
-  }
-
-  int nrConnectedComponents() {
-    int counter = 0;
-    for (int v = 1; v <= n; v++) {
-      nodes[v].visited = false;
-    }
-    for (int v = 1; v <= n; v++) {
-      if (!nodes[v].visited) {
-        counter++;
-        dfs2(v);
-      };
-    }
-    return counter;
-  }
-  int dfs3(int v) {
-    nodes[v].visited = true;
-    int size = 1;
-
-    for (auto e : nodes[v].adj) {
-      int w = e.dest;
-
-      if (!nodes[w].visited) {
-        size += dfs3(w);
-      }
-    }
-
-    return size;
-  }
-  /*
-    int largestComponent() {
-      int maxSize = 0;
-
-      for (int v = 1; v <= n; v++) {
-        nodes[v].visited = false;
-      }
-
-      for (int v = 1; v <= n; v++) {
-        if (!nodes[v].visited) {
-          int;
-          if (compSize > maxSize)
-            maxSize = compSize;
+    while (!qu.empty()) {
+      int u = qu.front();
+      qu.pop();
+      for (auto &e : nodes[u].adj) {
+        int v = e.dest;
+        if (dist[v] == -1) {
+          dist[v] = dist[u] + 1;
+          if (v == b)
+            return dist[v];
+          qu.push(v);
         }
       }
-
-      return maxSize;
-    }*/
-
-  void dfsOrder(int v, std::vector<bool> &visited, std::vector<int> &order) {
-    visited[v] = true;
-    for (auto e : nodes[v].adj) {
-      if (!visited[e.dest])
-        dfsOrder(e.dest, visited, order);
     }
-    order.push_back(v);
+    return -1;
   }
 
-  void dfsSCC(int v, std::vector<bool> &visited,
-              const std::vector<std::list<int>> &revAdj) {
-    visited[v] = true;
-    for (int w : revAdj[v]) {
-      if (!visited[w])
-        dfsSCC(w, visited, revAdj);
+  std::vector<int> bfs_dist(int s) {
+    std::vector<int> dist(n + 1, -1);
+    std::queue<int> q;
+    dist[s] = 0;
+    q.push(s);
+    while (!q.empty()) {
+      int u = q.front();
+      q.pop();
+      for (auto &e : nodes[u].adj) {
+        int v = e.dest;
+        if (dist[v] == -1) {
+          dist[v] = dist[u] + 1;
+          q.push(v);
+        }
+      }
     }
+    return dist;
   }
 
-  int countSCCs() {
-    std::vector<bool> visited(n + 1, false);
-    std::vector<int> order;
+  int diameter() {
+    int diam = 0;
 
-    for (int i = 1; i <= n; i++) {
-      if (!visited[i])
-        dfsOrder(i, visited, order);
-    }
-
-    std::vector<std::list<int>> revAdj(n + 1);
     for (int u = 1; u <= n; u++) {
-      for (auto e : nodes[u].adj) {
-        revAdj[e.dest].push_back(u);
+      std::vector<int> dist = bfs_dist(u);
+
+      for (int v = 1; v <= n; v++) {
+        if (dist[v] == -1) {
+
+          return -1;
+        }
+        if (dist[v] > diam) {
+          diam = dist[v];
+        }
       }
     }
 
-    std::fill(visited.begin(), visited.end(), false);
-    int sccCount = 0;
-
-    for (int i = n - 1; i >= 0; i--) {
-      int v = order[i];
-      if (!visited[v]) {
-        dfsSCC(v, visited, revAdj);
-        sccCount++;
-      }
-    }
-
-    return sccCount;
+    return diam;
   }
-};
+}
+
+;
 
 #endif

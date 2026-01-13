@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="Autarquicas.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="3592"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="0"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="coalition" custom_title="0" dock_id="2" table="4,9:maincoalition"/><dock_state state="000000ff00000000fd00000001000000020000000000000000fc0100000002fb000000160064006f0063006b00420072006f00770073006500310100000000ffffffff0000000000000000fb000000160064006f0063006b00420072006f00770073006500320100000000ffffffff0000010e00ffffff000000000000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="ddl_aut2021.sql" filename="/home/thomas/Desktop/2nd year/BD/ddl_aut2021.sql">-- Reference to file &quot;/home/thomas/Desktop/2nd year/BD/ddl_aut2021.sql&quot; (not supported by this version) --</sql><sql name="SQL 2*">-- List the names of the municipalities where the winner was an independent (not a party or a party coalition). 
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="Autarquicas.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="3592"/><column_width id="4" width="0"/><expanded_item id="1" parent="0"/><expanded_item id="0" parent="1"/><expanded_item id="0" parent="0"/><expanded_item id="1" parent="0"/><expanded_item id="4" parent="0"/><expanded_item id="6" parent="0"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="coalition" custom_title="0" dock_id="2" table="4,9:maincoalition"/><dock_state state="000000ff00000000fd00000001000000020000000000000000fc0100000002fb000000160064006f0063006b00420072006f00770073006500310100000000ffffffff0000000000000000fb000000160064006f0063006b00420072006f00770073006500320100000000ffffffff0000010e00ffffff000000000000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="coalition" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="110"/><column index="2" value="257"/><column index="3" value="300"/><column index="4" value="46"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="ddl_aut2021.sql" filename="/home/thomas/Desktop/2nd year/BD/ddl_aut2021.sql">-- Reference to file &quot;/home/thomas/Desktop/2nd year/BD/ddl_aut2021.sql&quot; (not supported by this version) --</sql><sql name="SQL 2*">-- List the names of the municipalities where the winner was an independent (not a party or a party coalition). 
 -- Order the result alphabetically by municipality name.
 
 with MaxResult As(
@@ -145,6 +145,107 @@ join party p on p.id = PartyId
 group by p.shortname
 having count(*)&gt;10
 order by total_municipalities DESC
+
+
+---------------------------------------
+
+
+
+--For each party, list the number of municipalities 
+--here it ran and obtained more than 100 votes (considering party lists and coalitions). 
+--Name this attribute total_municipalities. Return only parties with total_municipalities greater than 10. 
+--Order the result in descending order of total_municipalities.
+with oio2 as(
+
+with oio as (
+select p.shortname as shortname, m.code 
+from municipality m
+join party_votes pv on pv.municipality_code = m.code
+join party p on p.id = pv.party_id
+WHERE pv.votes &gt; 100
+
+
+union 
+
+select p.shortname as shortname, m.code
+from municipality m
+join coalition c on c.municipality_code = m.code
+join coalition_member cm on cm.coalition_shortname= c.shortname and m.code = cm.municipality_code
+join party p on p.id = cm.party_id
+WHERE c.votes &gt; 100
+
+)
+
+
+SELECT shortname,
+       COUNT(*) AS total_municipalities
+FROM oio
+GROUP BY shortname
+)
+
+select *
+from oio2
+where total_municipalities &gt; 10
+order by total_municipalities desc 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+with help as(
+select m.code, p.shortname as shortname
+from municipality m
+join party_votes pv on pv.municipality_code = m.code
+join party p on p.id = pv.party_id 
+where pv.votes &gt; 100
+
+UNION 
+
+
+
+select m.code, p.shortname
+from municipality m
+join coalition_member cm on cm.municipality_code = m.code
+join coalitionW on c.shortname = cm.coalition_shortname
+join party p on p.id = cm.party_id
+where c.votes &gt; 100)
+
+select shortname, count(*) as total_somehting
+from help h
+
+group by shortname
+having count(*) &gt; 10
+order by count(*) desc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </sql><current_tab id="1"/></tab_sql></sqlb_project>

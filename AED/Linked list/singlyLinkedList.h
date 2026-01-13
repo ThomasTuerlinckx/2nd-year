@@ -216,6 +216,32 @@ public:
 
     length++;
   }
+  void moveMaximum(int k){
+if (k > 1) {
+Node<T> *max = first, *maxprev = nullptr;
+Node<T> *curr = first, *prev = nullptr;
+while (--k > 0) {
+prev = curr;
+curr = curr -> getNext();
+if (curr -> getValue() > max -> getValue()) {
+maxprev = prev;
+max = curr;
+}
+}
+if (curr != max) {
+if (maxprev != nullptr)
+maxprev -> setNext(max->getNext());
+else first = max->getNext();
+max -> setNext(curr -> getNext());
+curr -> setNext(max);
+}
+}
+  }
+
+void sort() {
+for(int k = length; k > 1; k--)
+moveMaximum(k);
+}
 };
 
 #endif
